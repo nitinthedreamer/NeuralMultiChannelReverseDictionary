@@ -1,3 +1,6 @@
+import torch
+torch.cuda.current_device()
+
 import argparse, torch, gc, os, random, json
 from data import MyDataset, load_data, my_collate_fn, device, word2feature, label_multihot, mask_noFeature
 from model import Encoder
